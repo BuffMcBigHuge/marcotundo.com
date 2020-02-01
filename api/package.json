@@ -1,0 +1,8 @@
+{
+  "name": "marcotundo.com",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "html-to-text": "^5.1.1"
+  }
+}
