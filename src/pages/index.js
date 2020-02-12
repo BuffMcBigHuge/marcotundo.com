@@ -115,6 +115,12 @@ class HomeIndex extends React.Component {
         });
         //const json = await response.json();
         alert(`Thank you ${this.state.name}. Your message has been sent.`);
+
+        this.setState({
+            name: '',
+            message: '',
+            email: ''
+        })
     };
 
     render() {
@@ -160,7 +166,7 @@ class HomeIndex extends React.Component {
                         <ul>
                             <li>JavaScript, Python, Bash, YML,</li>
                             <li>Artificial Intelligence, ML, Tensor Flow,</li>
-                            <li>MEAN Stack (MongoDB, Express, Angular, NodeJS),</li>
+                            <li>MEAN Stack (MongoDB, Express, AngularJS, Node.js),</li>
                             <li>Front End (Flex, SCSS, Gulp),</li>
                             <li>Back End (REST, SSL, NoSQL, MongoDB, Redis, npm, async),</li>
                             <li>3rd Party APIs (Stripe, Slack, GCP, MailGun, Mailchimp, HubSpot, SendGrid),</li>
@@ -178,11 +184,11 @@ class HomeIndex extends React.Component {
                         <h2>⏰ Management</h2>
 
                         <ul>
-                            <li>Lead a team of 7 engineers as of 2019,</li>
+                            <li>Leads a team of 7 engineers as of Q1 2020,</li>
                             <li>Agile sprints, design/development processes,</li>
                             <li>Events, logistics, business real estate, investments, purchasing,</li>
                             <li>Business operations, human resource,</li>
-                            <li>Fundraising, SR&Ed, IRAP, pitching.</li>
+                            <li>Fundraising, SR&Ed, NRC IRAP, pitching.</li>
                         </ul>
 
                     </section>
