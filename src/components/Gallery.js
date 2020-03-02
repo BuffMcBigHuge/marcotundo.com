@@ -64,7 +64,7 @@ class Gallery extends Component {
                         href={obj.src}
                         onClick={(e) => this.openLightbox(i, e)}
                     >
-                        <img src={obj.thumbnail} />
+                        <img alt={obj.caption} src={obj.thumbnail} />
                     </a>
 
                     <h3>{obj.caption}</h3>
