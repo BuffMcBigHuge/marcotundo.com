@@ -5,6 +5,7 @@ module.exports = {
     author: `@buffmcbighuge`,
   },
   plugins: [
+    `gatsby-plugin-compression-v2`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'marcotundo.com'
+        bucketName: 'marcotundo.com',
       },
     },
     'gatsby-plugin-sass',

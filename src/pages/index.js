@@ -132,6 +132,7 @@ class HomeIndex extends React.Component {
                 <Helmet>
                     <title>{siteTitle}</title>
                     <meta name="description" content={siteDescription} />
+                    <html lang="en" />
                 </Helmet>
 
                 <div id="main">
@@ -197,7 +198,7 @@ class HomeIndex extends React.Component {
                         <img id="marco" src={marco} alt={'Marco Domenico Tundo'}/>
                     </section>
 
-                    <section id="three">
+                    <section id="four">
                         <h2>💾 Ongoing Research</h2>
 
                         <ul>
@@ -214,7 +215,7 @@ class HomeIndex extends React.Component {
 
                     </section>
 
-                    <section id="four">
+                    <section id="five">
                         <h2>📡 Get In Touch</h2>
                         <p>I am open to questions about my research or business.</p>
                         <div className="row">
@@ -222,12 +223,15 @@ class HomeIndex extends React.Component {
                                 <form onSubmit={this.handleSubmit}>
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)">
+                                            <label htmlFor="name" className="hide"/>
                                             <input type="text" name="name" id="name" placeholder="Name" value={this.state.name} onChange={this.handleInputChange}/>
                                         </div>
                                         <div className="6u 12u$(xsmall)">
+                                            <label htmlFor="email" className="hide"/>
                                             <input type="email" name="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleInputChange} />
                                         </div>
                                         <div className="12u">
+                                            <label htmlFor="message" className="hide"/>
                                             <textarea name="message" id="message" placeholder="Message" rows="4" value={this.state.message} onChange={this.handleInputChange}/>
                                         </div>
                                     </div>
